@@ -1,0 +1,11 @@
+--- a/plat/rockchip/rk3328/include/platform_def.h	2020-04-20 05:56:43.000000000 -1000
++++ b/plat/rockchip/rk3328/include/platform_def.h	2020-11-02 19:29:31.814473989 -1000
+@@ -76,7 +76,7 @@
+ /*
+  * Put BL3-1 at the top of the Trusted RAM
+  */
+-#define BL31_BASE		(TZRAM_BASE + 0x40000)
++#define BL31_BASE		(TZRAM_BASE + 0x10000)
+ #define BL31_LIMIT		(TZRAM_BASE + TZRAM_SIZE)
+
+ /*******************************************************************************

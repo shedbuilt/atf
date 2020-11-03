@@ -1,0 +1,9 @@
+NAME=atf
+VERSION=2.3
+REVISION=1
+LICENSE=BSD-3-Clause
+SRC=https://github.com/ARM-software/arm-trusted-firmware/archive/v2.3.tar.gz
+SRCMD5=06ad72bdf63b922a3f3865d81f5d9ad2
+ALIASES=allh5cc|nanopineo2|nanopineoplus2|orangepipc2|nanopik1plus:sun50ih5 rock64:rk3328
+OPTIONS=bootstrap|release sun50ih5 rk3328
+DEFAULTS=release
