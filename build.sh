@@ -1,9 +1,5 @@
 #!/bin/bash
 declare -A SHED_PKG_LOCAL_OPTIONS=${SHED_PKG_OPTIONS_ASSOC}
-# Patch
-for SHED_PKG_LOCAL_PATCH in "${SHED_PKG_PATCH_DIR}"/*; do
-     patch -Np1 -i "$SHED_PKG_LOCAL_PATCH" || exit 1
-done
 # Configure
 for SHED_PKG_LOCAL_OPTION in "${!SHED_PKG_LOCAL_OPTIONS[@]}"; do
     case "$SHED_PKG_LOCAL_OPTION" in
